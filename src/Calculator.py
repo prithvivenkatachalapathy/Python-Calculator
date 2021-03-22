@@ -10,6 +10,11 @@ def subtraction(a, b):
 def multiplication(a, b):
     return a * b
 
+def division(a, b):
+    a = float(a)
+    b = float(b)
+    return round(b / a, 9)
+
 class Calculator:
 
     def __init__(self):
@@ -27,4 +32,8 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
