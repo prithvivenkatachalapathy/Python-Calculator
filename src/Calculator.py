@@ -15,6 +15,12 @@ def division(a, b):
     b = float(b)
     return round(b / a, 9)
 
+def squarert(a):
+    a = float(a)
+    b = math.sqrt(a)
+    c = float(b)
+    return c
+
 class Calculator:
 
     def __init__(self):
@@ -37,3 +43,10 @@ class Calculator:
     def divide(self, a, b):
         self.result = division(a, b)
         return self.result
+
+    def sqrt(self, a):
+        self.result = squarert(a)
+        return self.result
+
+
+
